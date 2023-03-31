@@ -53,7 +53,6 @@ return require('packer').startup(function(use)
             }
         }
 
-    use 'preservim/vimux'        
     use { "catppuccin/nvim", as = "catppuccin" }   
     
     if packer_bootstrap then
