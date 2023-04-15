@@ -20,8 +20,8 @@ return require('packer').startup(function(use)
         -- or                            , branch = '0.1.x',
         requires = { {'nvim-lua/plenary.nvim'} }
     }
-    use({ 'rose-pine/neovim', as = 'rose-pine' })
-    vim.cmd('colorscheme rose-pine')
+    use { "catppuccin/nvim", as = "catppuccin" }
+    vim.cmd('colorscheme catppuccin')
 
     use {
         'nvim-treesitter/nvim-treesitter',
@@ -53,8 +53,7 @@ return require('packer').startup(function(use)
             }
         }
 
-    use { "catppuccin/nvim", as = "catppuccin" }   
-    
+
     if packer_bootstrap then
         require('packer').sync()
     end
