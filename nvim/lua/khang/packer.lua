@@ -28,6 +28,7 @@ return require('packer').startup(function(use)
         run = ':TSUpdate'
     }
 
+    use 'christoomey/vim-tmux-navigator'
     use 'nvim-treesitter/playground'
     use 'ThePrimeagen/harpoon'
     use 'mbbill/undotree'
